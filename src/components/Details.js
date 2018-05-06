@@ -28,17 +28,6 @@ const Details = (props) => (
 
     <div className="level is-mobile">
       <div className="level-left">
-        <p className="is-size-7 is-uppercase">Pulse Oximetry</p>
-      </div>
-      <div className="level-right">
-        <p>{props.data.pulseOximetry}</p>
-        <span className="is-size-7 is-uppercase">&nbsp;SP02</span>
-      </div>
-    </div>
-    <hr/>
-
-    <div className="level is-mobile">
-      <div className="level-left">
         <p className="is-size-7 is-uppercase">Air Quality</p>
       </div>
       <div className="level-right">

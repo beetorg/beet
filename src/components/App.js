@@ -34,8 +34,7 @@ class App extends Component {
       hrSent: false,
       rrSent: false,
       sdSent: false,
-      air: 'GOOD',
-      pulseOximetry: 99,
+      air: 'GOOD'
     }
   }
 
@@ -106,8 +105,7 @@ class App extends Component {
             signalStrength: data.ss,
             signalStatus: data.status,
             respirationRate: data.rr,
-            heartRateVariation: data.hrv,
-            pulseOximetry: this.fudge(95, 99).toFixed(),
+            heartRateVariation: data.hrv
           });
         });
       });
