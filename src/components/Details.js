@@ -20,7 +20,7 @@ const Details = (props) => (
         <p className="is-size-7 is-uppercase">Heart Rate Variability</p>
       </div>
       <div className="level-right">
-        <p>{props.data.hr}</p>
+        <p>{props.data.hrv}</p>
         <span className="is-size-7 is-uppercase">&nbsp;ms</span>
       </div>
     </div>

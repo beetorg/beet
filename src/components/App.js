@@ -105,7 +105,7 @@ class App extends Component {
             signalStrength: data.ss,
             signalStatus: data.status,
             respirationRate: data.rr,
-            heartRateVariation: data.hrv
+            heartRateVariation: data.hr
           });
         });
       });
