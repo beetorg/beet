@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
-import { Motion, spring, presets } from 'react-motion';
-import styled from 'styled-components';
-
-const Circle = styled.div`
-  border-radius: 50%;
-  width: ${(props) => props.width}px;
-  height: ${(props) => props.width}px;
-  opacity: ${(props) => props.opacity};
-  margin: 0 auto;
-  border: 2px solid palevioletred;
-`
+// import { Motion, spring, presets } from 'react-motion';
+// import styled from 'styled-components';
 
 class Heart extends Component {
   render() {

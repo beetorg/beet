@@ -1,7 +1,7 @@
 import React from 'react';
 import Heart from './Heart';
 import Details from './Details';
-import { Motion } from 'react-motion';
+// import { Motion } from 'react-motion';
 
 const Card = (props) => {
   if (props.data.occupied) {
