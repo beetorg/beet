@@ -1,0 +1,68 @@
+html {
+  background: linear-gradient(to bottom right, #FFE777, #FCB87B);
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+
+}
+
+.app .is-transparent {
+  background-color: unset;
+}
+
+.app .navbar .navbar-brand {
+  align-items: center;
+  justify-content: center;
+}
+
+.app .box {
+  border: unset;
+  box-shadow: unset;
+}
+
+.app .section:first-of-type {
+  padding-top: 5px;
+}
+
+.app .card {
+  border-radius: 5px;
+  box-shadow: unset;
+}
+
+.app canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.app .card-image .heart{
+  display: flex;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.app .line {
+  width: 100%;
+  height: 50px;
+}
+
+.app .level {
+  margin-bottom: 0;
+}
+
+.app hr {
+  margin: 10px 0;
+}
+
+.app .heartrate {
+  position: absolute;
+}
+
+.app .heartrate-text {
+  position: absolute;
+  top: 168px;
+}
