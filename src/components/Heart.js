@@ -14,27 +14,33 @@ const Circle = styled.div`
 class Heart extends Component {
   render() {
     return(
-      <div className="heart">
+      // <div className="heart">
       
-        <Circle
-          width={200}
-          height={200}
-          opacity={1} />
+      //   <Circle
+      //     width={200}
+      //     height={200}
+      //     opacity={1} />
         
-        <Motion 
-          key={this.props.data.hr}
-          defaultStyle={{opacity: 0}} 
-          style={{opacity: spring(1)}}>
-          {values => (
-            <h3 
-              className="heartrate title is-3"
-              style={{opacity: values.opacity}}>
-                {this.props.data.hr}
-            </h3>
-          )}
-        </Motion>
-        <p className="is-size-7 heartrate-text">BEATS PER MINUTE</p>
-      </div>
+      //   <Motion 
+      //     key={this.props.data.hr}
+      //     defaultStyle={{opacity: 0}} 
+      //     style={{opacity: spring(1)}}>
+      //     {values => (
+      //       <h3 
+      //         className="heartrate title is-3"
+      //         style={{opacity: values.opacity}}>
+      //           {this.props.data.hr}
+      //       </h3>
+      //     )}
+      //   </Motion>
+      //   <p className="is-size-7 heartrate-text">BEATS PER MINUTE</p>
+      // </div>
+      <div 
+        className="pulse"
+        style={{
+          animation: `${(60 / this.props.data.hr).toFixed()}s pulse infinite linear`,
+        }}>
+      </div> 
     );
     
   }
