@@ -52,7 +52,7 @@ const Details = (props) => (
         <p className="is-size-7 is-uppercase">Bed Occupied?</p>
       </div>
       <div className="level-right">
-        <p className={`is-size-7 is-uppercase ${props.data.occupied ? 'has-text-info' : 'has-text-danger'}`}>
+        <p className={`is-size-7 is-uppercase ${props.data.occupied ? 'has-text-success' : 'has-text-danger'}`}>
           {props.data.occupants === 1 ? 'No' : 'Yes'}
         </p>
       </div>

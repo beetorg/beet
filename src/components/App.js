@@ -102,11 +102,12 @@ class App extends Component {
           this.setState({
             hArray: [...this.state.hArray, data.hr || 0],
             hr: data.hr,
-            occupied: true,
+            occupied: data.occupied,
             signalStrength: data.ss,
             signalStatus: data.status,
             respirationRate: data.rr,
-            heartRateVariation: data.hrv
+            heartRateVariation: data.hrv,
+            pulseOximetry: this.fudge(95, 99).toFixed(),
           });
         });
       });
@@ -121,7 +122,7 @@ class App extends Component {
         <Notifications />
         <Header/>
         <Card data={{...this.state}}/>
-        <Line data={this.state.hArray}/>
+        <Line data={this.state.hArray} occupied={this.state.occupied}/>
       </div>
     );
   }

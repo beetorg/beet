@@ -3,6 +3,10 @@ import { Sparklines, SparklinesCurve } from 'react-sparklines';
 
 class Line extends Component {
   render() {
+    if (!this.props.occupied) {
+      return null;
+    }
+    
     return (
       <div className="line">
         <Sparklines
@@ -16,6 +20,7 @@ class Line extends Component {
         </Sparklines>
       </div>
     );
+    
   }
 }
 
